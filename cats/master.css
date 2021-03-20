@@ -1,0 +1,15 @@
+.rosa i{
+  color: #EE82EE;
+}
+.azzurro i{
+  color: #0000FF;
+}
+.brightnes_1{
+  filter: brightness(60%);
+}
+.brightnes_2{
+  filter: brightness(80%);
+}
+.brightnes_3{
+  filter: brightness(120%);
+}
