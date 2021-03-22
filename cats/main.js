@@ -78,12 +78,7 @@ function gatti() {
     // MILESTONE 3
     // CREO NUOVO ARRAY MARGED E ELIMINO LE PROPRIETA CHE NON MI SERVONO
   let mergedcats = [...femmine, ...maschi];
-  //PRIMO MODO CON FOR
-  //   for (var i = 0; i < mergedcats.length; i++){
-  //   delete mergedcats[i].eta;
-  //   delete mergedcats[i].sesso;
-  // }
-  // 2 MODO CON MAP
+  
   let newarray = mergedcats.map(function(cat) {
     const {nome , colore , brightnes} = cat;
     let gatto = {
@@ -93,7 +88,15 @@ function gatti() {
     }
     return gatto;
   })
-    console.log(newarray);
+  console.log(newarray);
+
+  // 2 MODO
+  // let newarray = mergedcats.map(function(cat) {
+  //   delete cat.eta;
+  //   delete cat.sesso;
+  //   return cat;
+  // })
+  // console.log(newarray);
 
 
 
