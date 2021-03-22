@@ -85,9 +85,13 @@ function gatti() {
   // }
   // 2 MODO CON MAP
   let newarray = mergedcats.map(function(cat) {
-    delete cat.eta;
-    delete cat.sesso;
-    return cat;
+    const {nome , colore , brightnes} = cat;
+    let gatto = {
+      nome,
+      colore,
+      brightnes
+    }
+    return gatto;
   })
     console.log(newarray);
 
