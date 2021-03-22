@@ -77,7 +77,7 @@ function gatti() {
 
     // MILESTONE 3
     // CREO NUOVO ARRAY MARGED E ELIMINO LE PROPRIETA CHE NON MI SERVONO
-  let mergedcats = [...maschi,...femmine];
+  let mergedcats = [...femmine, ...maschi];
   //PRIMO MODO CON FOR
   //   for (var i = 0; i < mergedcats.length; i++){
   //   delete mergedcats[i].eta;
